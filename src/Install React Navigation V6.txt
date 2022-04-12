@@ -1,0 +1,16 @@
+Install React-Navigation V6
+===============================
+
+1. Open your directory project : cd /sparepart_control
+2. Install: yarn add @react-navigation/native
+3. Install : yarn add react-native-screens react-native-safe-area-context
+4. Open direcotry file : android/app/main/java/com/spareparts_control(your name project)/MainActivity.java
+   a. add on the top : import android.os.Bundle;
+   b. add in public class MainActivity :
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(null);
+        }
+   c. Save & finish
+5. Install : yarn add @react-navigation/native-stack
+6. Finish

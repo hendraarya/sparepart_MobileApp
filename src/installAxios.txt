@@ -1,0 +1,6 @@
+Install API Third Party "Axios"
+================================
+
+1. Open your repository project on command prompt
+2. ketik : yarn add axios
+3. Selesai

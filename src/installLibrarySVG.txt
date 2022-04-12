@@ -1,0 +1,25 @@
+1. Download library SVG , bisa disitus : https://github.com/react-native-svg/react-native-svg#automatically
+   NB: install library-nya di dalam project yang kita buat
+2. yarn add react-native-svg  // ini merupakan install library svg automaticlly, jika version react-native > 0.60
+3. yarn add --dev react-native-svg-transformer  // install ini jika, ingin menggunakan SVG file yang disimpan dilokal repository, bukan online
+4. paste config ini di file 'metro.config.js'
+const { getDefaultConfig } = require('metro-config');
+
+module.exports = (async () => {
+  const {
+    resolver: { sourceExts, assetExts },
+  } = await getDefaultConfig();
+  return {
+    transformer: {
+      babelTransformerPath: require.resolve('react-native-svg-transformer'),
+    },
+    resolver: {
+      assetExts: assetExts.filter(ext => ext !== 'svg'),
+      sourceExts: [...sourceExts, 'svg'],
+    },
+  };
+})();
+
+5. Download contoh file SVG, bisa di situs https://undraw.co/illustrations
+6. Membuat file Component Untuk Trial Menampilkan file SVG
+7. Selesai

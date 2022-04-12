@@ -1,0 +1,25 @@
+***Install BarcodeScanner React Native****
+=============================================
+
+1. Install use CMD pada project anda, dengan perintah berikut ini :
+   >> cd TutorHudoro   //masuk ke directory project
+   >> npm install react-native-camera --save  //install camera sampai finished
+   >> npm install react-native-qrcode-scanner --save // install barcodescanner sampai selesai
+   >> npm install react-native-permissions --save   //install library permission untuk access kamera,dll
+
+2. Tambahkan syntax dibawah ini, pada directory : android/app/src/main/AndroidManifest.xml
+  
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+3. Tambahkan syntax berikut ini, pada directory : android/app/build.gradle
+
+   #tambahkan syntax dibawah ini pada bagian "defaultConfig", dibawahnya VersionName "1.0"
+ 	
+    missingDimensionStrategy 'react-native-camera', 'general'
+
+4. Setelah step 1-3 selesai, dapat dilakukan percobaan dengan menggunakan "sample program" test Barcode Scanner
+   pada url ini : https://github.com/moaazsidat/react-native-qrcode-scanner
+   **cari sample program pada bagian "Usage"
+
+5. Selesai

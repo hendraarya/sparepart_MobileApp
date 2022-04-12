@@ -1,0 +1,4 @@
+Install for Use Icon2
+===========================
+
+>> yarn add react-native-ionicons@^4.6.5
