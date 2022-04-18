@@ -11,16 +11,17 @@ export function MainStackNavigator() {
       <MainStack.Screen
         name={'MainMenu'}
         component={MainMenu}
-        options={{
-          title: 'MainMenu',
-        }}
+        screenOptions={{headerShown: false}}
+        // options={{
+        //   title: 'MainMenu',
+        // }}
       />
       {/* <MainStack.Screen
         name={'Stockpartin'}
         component={Stockpartin}
-        options={{
-          title: 'MainMenu',
-        }}
+        // options={{
+        //   title: 'MainMenu',
+        // }}
       /> */}
     </MainStack.Navigator>
   );

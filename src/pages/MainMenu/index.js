@@ -32,7 +32,7 @@ export function MainMenu({navigation}) {
       <FilledButton
         title={'Stock Part In'}
         onPress={() => {
-          navigation.navigate('Stockpartin');
+          navigation.goBack();
         }}
       />
     </AuthContainer>
